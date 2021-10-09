@@ -1,6 +1,6 @@
 def flow
 node('master') {
-    git branch: 'master', changelog: false, poll: true, url: 'https://github.com/lavaliere/workflow-plugin-pipeline-demo.git'
+    git branch: 'master', changelog: false, poll: true, url: 'https://github.com/kumar2731/java-app.git'
     flow = load 'flow.groovy'
     flow.devQAStaging()
 }
